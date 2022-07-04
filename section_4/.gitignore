@@ -1,0 +1,14 @@
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
+
+# Node
+/node_modules
+/node_modules/colors/*
+npm-debug.log
+yarn-error.log
+*.json
+
+#Prueba
