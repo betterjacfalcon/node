@@ -1,16 +1,16 @@
 const fs = require('fs');
-const crearArhivo = async( valor = 5) => {
+const crearArhivo = async( valor = 5, listar = false) => {
     try{
-        console.log('==========================')
-        console.log(`       Tabla del ${valor}`)
-        console.log('==========================')
 
         let salida = '';
         for (let i=1;i<=10;i++) { 
             salida += ` ${i} *  ${valor} = ${valor * i} \n`;
         }
-        
-        console.log(salida);
+        if (listar){
+        console.log('==========================')
+        console.log(`       Tabla del ${valor}`)
+        console.log('==========================')
+        console.log(salida);}
         
         /*fs.writeFile(`tabla-${valor}.txt`, salida, (err) => {
             if (err) throw err;
