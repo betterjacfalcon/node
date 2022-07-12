@@ -12,6 +12,12 @@ const argv = require ('yargs')
             default: false,
             describe: '/muestra la tabla en consola si listar es true'
         })
+        .option('h', {
+            alias: 'hasta',
+            type: 'number',
+            default: 10,          
+            describe: '/Numero final para ejecutar la multiplicacion'
+        })
         .check((argv, option) =>{
             if (isNaN(argv.v)){
             throw 'La base tiene que ser un numero'

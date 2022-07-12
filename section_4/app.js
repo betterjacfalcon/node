@@ -10,7 +10,7 @@ console.clear();
 const [ , valor=5] = arg3.split('=');*/
 
 
-crearArhivo(argv.v, argv.l)
+crearArhivo(argv.v, argv.l, argv.h)
     .then( nombreArchivo => console.log(nombreArchivo.rainbow,'creado') )
     .catch(err => console.log(err));
 
