@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+//const { resolve } = require('path');
 
 require('colors');
 
@@ -52,3 +52,5 @@ module.exports = {
     mostrarMenu,
     pausa
 }
+
+export  { pausa };
