@@ -5,17 +5,11 @@ import {Tareas} from './models/tareas.js';
 console.clear();
 
 const main = async() => {
-    console.log('Hola mundo');
-
     let opt='';
     const tareas = new Tareas();
-    /*do {
-       opt = await inquirerMenu();
-       console.log({opt});
-       if (opt !== '0') console.log({opt});
-    } while (opt !== '0');*/
-
+    
     do {
+       //imprimir menu
         opt = await inquirerMenu();
         switch (opt) {
           case '1': 
@@ -24,7 +18,8 @@ const main = async() => {
             break;
         
           case '2':
-            console.log(tareas._listado);
+            console.log(tareas.listadoArr);
+            
             break;
         }
         
